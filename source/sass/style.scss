@@ -1,0 +1,10 @@
+@use "page-header.scss";
+@use "main-nav";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+$mobile-width: 768px;
+$desktop-width: 1024px;

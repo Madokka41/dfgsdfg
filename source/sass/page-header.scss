@@ -1,0 +1,16 @@
+.page-header {
+  background-color: #999999;
+  color: #1d1d1d;
+  box-sizing: border-box;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #ffffff;
+  }
+}
+
+.page-header__title {
+  margin: 0;
+}

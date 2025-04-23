@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-header__title">Madokka</h1>
+    <nav class="main-nav main-nav--opened" aria-label="Main navigation">
+      <button class="page-header__menu-button" aria-label="Open menu"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Home</a></li>
+          <li class="main-nav__item"><a href="#">About</a></li>
+          <li class="main-nav__item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="main-nav__login">
+          <a href="#">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  </header>
+</body>
+<script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.page-header__menu-button');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+</script>
+
+</html>
